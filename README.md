@@ -27,7 +27,7 @@ This discord bot includes features useful to server owners/staff to help run a d
 
 ## Support
 
-If any support is needed please reach out on discord!
+If any support is needed please reach out on discord
 
 Server: https://discord.gg/hqAX4Rfs7s
 
