@@ -6,5 +6,7 @@
     "PlayerCountChannel": "000000000000000000",
     "suggestionchannel": "000000000000000000",
     "ticketCategory": "000000000000000000",
-    "supportRole": "000000000000000000"
+    "supportRole": "000000000000000000",
+    "botActivityType": "PLAYING",
+    "botActivity": "Minecraft"
 }

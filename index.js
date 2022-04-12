@@ -15,6 +15,9 @@ const schedule = require("node-schedule");
 
 client.commands = new Discord.Collection();
 
+var checkUpdate = require('check-update-github');
+var pkg = require('./package.json');
+
 const commandFiles = fs.readdirSync(`./commands/`).filter(file => file.endsWith('.js'));
 for(const file of commandFiles){
     const command = require(`./commands/${file}`);
@@ -24,7 +27,18 @@ for(const file of commandFiles){
 
 client.on('ready', () =>{
     console.log('Bot Active!');
-    client.user.setActivity('The Discord Server', {type: 'WATCHING' });
+    client.user.setActivity(config.botActivity, {type: config.botActivityType });
+});
+
+checkUpdate({
+    name: pkg.name, 
+    currentVersion: pkg.version, 
+    user: 'Toodixx',
+    branch: 'master'
+    }, function(err, latestVersion, defaultMessage){
+    if(!err){
+        console.log(defaultMessage);
+    }
 });
 
 schedule.scheduleJob('*/1 * * * *', function(){

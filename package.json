@@ -1,6 +1,6 @@
 {
-  "name": "discord-bot",
-  "version": "1.0.0",
+  "name": "minecraft-discord-bot",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,7 @@
   "author": "Toodixx",
   "license": "ISC",
   "dependencies": {
+    "check-update-github": "^0.0.4",
     "discord.js": "^13.6.0",
     "dotenv": "^16.0.0",
     "minecraft-server-util": "^5.2.9",
